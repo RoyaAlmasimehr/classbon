@@ -1,4 +1,6 @@
 
+import { Footer } from "./_components/footer/footer";
+import { Header } from "./_components/header/header";
 import "./globals.css";
 import { Figtree } from "next/font/google";
 
@@ -15,15 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="rtl" className={`${figtree.variable }`}>
-      <body className="flex flex-col min-h-screen font-bold uppercase">
-        <header className="bg-gray-200 flex items-center justify-center h-20">
-          header
-        </header>
-        <div className="flex-1 flex" > {children}</div>
-        <footer className="bg-gray-200 flex items-center justify-center h-20">
-          footer
-        </footer>
+    <html lang="en" dir="rtl" className={` dark ${figtree.variable}`}>
+      <body className=" min-h-screen grid grid-rows-[80px_1fr_auto]  dark:bg-base-100  dark:text-base-content">
+       <Header />
+        <div className="flex-1 flex"> {children}</div>
+       <Footer />
       </body>
     </html>
   );
