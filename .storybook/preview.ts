@@ -21,15 +21,7 @@ const preview: Preview = {
       test: "todo",
     },
   },
-  decorators: [
-    (Story) => {
-      return createElement(
-        "div",
-        { className: "dark min-h-screen" },
-        createElement(Story)
-      );
-    },
-  ],
+
 };
 
 export default preview;
