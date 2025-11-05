@@ -1,6 +1,11 @@
   @import "tailwindcss";
 
+  @import '../tailwind/components/components.css';
+
   @custom-variant dark (&:where(.dark, .dark *));
+
+
+
 
   :root {
       /* Base Colors */
@@ -79,18 +84,16 @@
       --color-base-300:var(--clb-c-base-300);
       --color-base-content: var(--clb-c-base-content);
 
-
-
-
   }
-
 
   @layer base {
       body {
-  font-family: var(--font-figtree);
+          font-family: var(--font-yekanbakh);
       }
 
-      
+      :lang(en) {
+        font-family: var(--font-figtree);
+      }
   }
 
 @layer utilities {
@@ -106,4 +109,4 @@
         @apply bg-gradient-to-r from-gradient-first to-gradient-second text-transparent bg-clip-text;
     }
 }
-   
+ 
