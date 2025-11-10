@@ -1,4 +1,5 @@
 import { Badge } from "@/app/_components/badge";
+import { IconArrowLeftFill, IconClock } from "@/app/_components/icons/icons";
 import { CourseSummary } from "@/types/course-summary.interface";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,12 +32,15 @@ return (
     </div>
     <p>{subTitle}</p>
     <div>
-      <Badge variant="warning">{duration}</Badge>
+      <Badge variant="warning">
+        <IconClock  width={16} height={16} />
+        {duration}</Badge>
 
       {basePrice}
     </div>
-    <Link href={`/course/${slug}`} className=" card-footer justify-center">
+    <Link href={`/course/${slug}`} className="animated-icon  card-footer justify-center">
       مشاهده جزییات دوره
+      <IconArrowLeftFill  fill="currentColor"/>
     </Link>
   </div>
 );

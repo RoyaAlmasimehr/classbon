@@ -1,12 +1,12 @@
 import BaseIcon from "@/app/_components/icons/base-icon";
-import type{ SvgIcon } from "@/app/_components/icons/icon.type";
+import type { SvgIcon } from "@/app/_components/icons/icon.type";
 
 
 
 export default function SvgIcon(props:SvgIcon) {
   return (
     <BaseIcon {...props}>
-      <%= contents %>
+      <path d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
     </BaseIcon>
   );
 }
