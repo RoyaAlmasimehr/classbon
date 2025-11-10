@@ -1,3 +1,4 @@
+import { Badge } from "@/app/_components/badge";
 import { CourseSummary } from "@/types/course-summary.interface";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,15 +22,22 @@ return (
         height={327}
       />
     </figure>
+    <div className="mt-2 gap-2 font-semibold dark:text-info px-3 py-2">
+      <Badge variant="info">{recordStatus}</Badge>
+      <Badge variant="accent">{level}</Badge>
+    </div>
     <div className="card-body">
       <Link href={`/course/${slug}`}>{title}</Link>
     </div>
     <p>{subTitle}</p>
     <div>
-      {duration}
+      <Badge variant="warning">{duration}</Badge>
+
       {basePrice}
     </div>
-    <Link href={`/course/${slug}`} className=" card-footer justify-center">مشاهده جزییات دوره</Link>
+    <Link href={`/course/${slug}`} className=" card-footer justify-center">
+      مشاهده جزییات دوره
+    </Link>
   </div>
 );
 }
