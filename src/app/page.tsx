@@ -4,7 +4,6 @@ import { homeFeatures } from "@/data/home-features";
 import Feature from "./_components/feature/feature";
 import { Button } from "./_components/button/button";
 import { IconArrowLeftFill } from "./_components/icons/icons";
-import { CourseCardList } from "./(courses)/courses/course-card-list";
 import { BlogPostSummary } from "@/types/blog-post-summary.interface";
 import { BlogPostCardList } from "./(blog)/_components/blog-post-card-list";
 import { API_URL } from "@/configs/global";
@@ -12,6 +11,7 @@ import { Suspense } from "react";
 import { CardPlaceholder } from "./_components/placeholders";
 import { TestimonialList } from "./_components/testimonial/testimonial-list";
 import { testimonials } from "@/data/testimonials";
+import { CourseCardList } from "./(courses)/_components/course-card-list";
 
 
 
