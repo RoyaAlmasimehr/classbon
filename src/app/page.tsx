@@ -15,6 +15,7 @@ import { CourseCardList } from "./(courses)/_components/course-card-list";
 
 
 
+
 async function getNewestPosts(count: number): Promise<BlogPostSummary[]> {
   const res = await fetch(`${API_URL}/blog/newest/${count}`, {
     next: { revalidate: 24 * 60 * 60 },
@@ -124,6 +125,7 @@ export default async function Home() {
         <TestimonialList testimonials={testimonials} />
        
       </div>
+  
     </>
   );
 }

@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "minio-classbon.darkube.app",
       },
+ 
+          {
+        protocol: "https",
+        hostname: "cdn.snappshop.ir",
+      },
     ],
   },
 };
