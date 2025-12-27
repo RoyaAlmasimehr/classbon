@@ -1,5 +1,5 @@
 import BaseIcon from "@/app/_components/icons/base-icon";
-import type { SvgIcon } from "@/app/_components/icons/icon.type";
+import type{ SvgIcon } from "@/app/_components/icons/icon.type";
 
 
 
