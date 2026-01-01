@@ -1,5 +1,6 @@
 
 
+import QueryProvider from "@/providers/react-query-provider";
 import { Footer } from "./_components/footer";
 import { Header } from "./_components/header";
 
@@ -21,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" dir="rtl" className={` dark ${figtree.variable}`}>
       <body className=" min-h-screen grid grid-rows-[80px_1fr_auto]  dark:bg-base-100  dark:text-base-content">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <QueryProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </QueryProvider>
       </body>
     </html>
   );
