@@ -20,7 +20,7 @@ const getComments = ({
 
 export const useCourseComments = ({ params }: GetCommentsOptions) => {
   const { data ,error,isFetchingNextPage,fetchNextPage,hasNextPage,refetch} = useInfiniteQuery({
-    queryKey: ["courseComments"],
+    queryKey: ["courseComments",params.slug],
     queryFn: ({pageParam}) => getComments({ params:{...params,page:pageParam} }),
     getNextPageParam:(lastPage)=>lastPage.nextPage,
     initialPageParam:1,
