@@ -10,6 +10,7 @@ export const queryClient = new QueryClient({
     queries: {
       retry: false,
       refetchOnWindowFocus: false,
+      throwOnError:false,
       gcTime: 1000 * 60 * 60 * 24,
     },
   },
