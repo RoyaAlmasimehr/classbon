@@ -1,18 +1,16 @@
-
 import { QueryCache, QueryClient } from "@tanstack/react-query";
 
-export const queryClient=new QueryClient({
-    queryCache:new QueryCache({
-        onError:(error)=>{
-            
-
-        }
-    }),
-    defaultOptions:{
-        queries:{
-            retry:false,
-            refetchOnWindowFocus:false,
-            gcTime:1000*60*60*24
-                }
-    }
-})
+export const queryClient = new QueryClient({
+  queryCache: new QueryCache({
+    onError: (error) => {
+      debugger;
+    },
+  }),
+  defaultOptions: {
+    queries: {
+      retry: false,
+      refetchOnWindowFocus: false,
+      gcTime: 1000 * 60 * 60 * 24,
+    },
+  },
+});
