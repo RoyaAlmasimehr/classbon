@@ -1,3 +1,9 @@
+import Link from "next/link";
+
 export default function Verify() {
-  return <div className="text-red-300">This is Verify page</div>;
+  return (
+    <div className="">
+      <Link href="/signin">Go To Signin Page</Link>
+    </div>
+  );
 }

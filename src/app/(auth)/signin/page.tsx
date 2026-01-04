@@ -1,5 +1,8 @@
+import Link from "next/link";
+import SignInForm from "./components/singin-form";
 
-export default  function SignIn() {
-  return <div className="text-red-300">This is SignIn page</div>;
+export default async function SignIn() {
+  return (
+ <SignInForm />
+  );
 }
-  
