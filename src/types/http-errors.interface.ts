@@ -27,4 +27,5 @@ export type {
   UnhandledException,
   NetworkError,
   ApiError,
+  Problem
 };
