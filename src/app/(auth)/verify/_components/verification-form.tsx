@@ -61,6 +61,7 @@ const VerificationForm = () => {
 
   return (
     <>
+    
       <h5 className="text-2xl">کد تایید</h5>
       <p className="mt-2">دنیای شگفت انگیز برنامه نویسی در انتظار شماست!</p>
       <form
